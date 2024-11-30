@@ -1,0 +1,54 @@
+.happen{
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    .happen_content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        h1{
+            font-size: 26px;
+            font-family: 'Space Grotesk';
+            font-weight: 600px;
+            max-width: 531px;
+            @media(max-width: 530px){
+                marign: 0px auto;
+                text-align: center;
+            }
+        }
+        p{
+            font-size: 20px;
+            font-family: 'Space Grotesk';
+            font-weight: 400;
+            max-width: 531px;
+            @media(max-width: 530px){
+                marign: 0px auto;
+                text-align: center;
+            }
+        }
+        button{
+            width: 264px;
+            height: 68px;
+            border-radius: 15px;
+            background-color: #191A23;
+            font-size: 20px;
+            color: white;
+            font-weight: 400;
+            border: none;
+            font-family: 'Space Grotesk';cursor: pointer;
+            @media(max-width: 990px){width: 95%;}
+        }
+    }
+    .happen_media{
+        @media(max-width: 990px){
+            display: none;
+        }
+        img{}
+    }
+}

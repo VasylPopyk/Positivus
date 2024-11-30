@@ -1,0 +1,48 @@
+body{
+    padding: 0;
+    margin: 0;
+    padding-top: 80px;
+    overflow-x: hidden;
+    &.locked{overflow-y: hidden;}
+    @media(max-width: 990px){
+        padding-top: 20px;
+    }
+}
+.section{
+    margin: 20px auto;
+}
+.container{
+    width: 1440px;
+    margin: 0px auto;
+    padding: 0 5px;
+    @media(max-width: 1440px){
+        width: 1200px;
+        padding: 0 3px;
+    }
+    @media(max-width: 1200px){
+        width: 1050px;
+        padding: 0 3px;
+    }
+    @media(max-width: 1050px){
+        width: 990px;
+        padding: 0 2px;
+    }
+    @media(max-width: 900px){
+        width: 100%;
+        padding: 0 3px;
+    }
+}
+.wrapper{
+    @import "header";
+    .page{
+        @import "banner";
+        @import "partners";
+        @import "services";
+        @import "happen";
+        @import "studies";
+        @import "process";
+        @import "team";
+        @import "contact";
+    }
+    @import "footer";
+}

@@ -1,0 +1,44 @@
+.process .process_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.process .process_header h1 {
+  font-size: 40px;
+  font-family: "Space Grotesk";
+  font-weight: 700;
+  background-color: #B9FF66;
+  border-radius: 5px;
+  padding: 2px;
+}
+.process .process_header p {
+  font-size: 18px;
+  font-family: "Space Grotesk";
+  font-weight: 400;
+  max-width: 580px;
+  margin-left: 40px;
+}
+@media (max-width: 990px) {
+  .process .process_header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .process .process_header h1 {
+    text-align: center;
+  }
+  .process .process_header p {
+    text-align: center;
+  }
+}

@@ -1,0 +1,50 @@
+.banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .banner_content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        h1{
+            font-size: 48px;
+            font-family: 'Space Grotesk';
+            font-weight: 600;
+            max-width: 531px;
+        }
+        img{display: none;
+            @media(max-width: 990px){
+                display: flex;
+                width: 100%;
+            }
+        }
+        p{
+            font-size: 20px;
+            font-family: 'Space Grotesk';
+            font-weight: 400;
+            max-width: 531px;
+        }
+        button{
+            width: 264px;
+            height: 68px;
+            border-radius: 15px;
+            background-color: #191A23;
+            font-size: 20px;
+            color: white;
+            font-weight: 400;
+            border: none;
+            font-family: 'Space Grotesk';cursor: pointer;
+            @media(max-width: 990px){width: 100%;}
+        }
+    }
+    .banner_media{
+        img{
+            @media(max-width: 990px){
+                display: none;
+            }
+        }
+    }
+}
